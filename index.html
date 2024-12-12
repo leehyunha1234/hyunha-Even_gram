@@ -1,42 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram Story</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="story-container">
-    <!-- 상단 게시자 정보 및 버튼 -->
-    <div class="story-header">
-      <span class="story-info">게시자 이름 • 2시간</span>
-      <button id="control-button" class="meatball">미트볼</button>
+<div class="story-container">
+    <div class="progress-bar"></div>
+    <div class="story-wrapper">
+        <div class="story" style="background: url('story1.jpg') no-repeat center/cover;"></div>
+        <div class="story" style="background: url('story2.jpg') no-repeat center/cover;"></div>
+        <div class="story" style="background: url('story3.jpg') no-repeat center/cover;"></div>
     </div>
-
-    <!-- 스토리 슬라이드 영역 -->
-    <div class="story-content">
-      <div class="story-slide">
-        <img src="https://via.placeholder.com/360x640" alt="Story 1">
-      </div>
-      <div class="story-slide">
-        <img src="https://via.placeholder.com/360x640?text=Story+2" alt="Story 2">
-      </div>
-      <div class="story-slide">
-        <img src="https://via.placeholder.com/360x640?text=Story+3" alt="Story 3">
-      </div>
-    </div>
-
-    <!-- 진행 바 -->
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
-
-    <!-- DM 입력란 -->
-    <div class="dm-section">
-      <input type="text" placeholder="user님에게 답장하기...">
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
+    <button class="action-button pause-button">일시정지</button>
+</div>
+<div class="dm-section">
+    <input type="text" class="dm-input" placeholder="메시지를 입력하세요" />
+    <button class="dm-send-button">보내기</button>
+</div>
